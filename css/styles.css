@@ -1,0 +1,186 @@
+:root {
+--primary-bg-color: #ffffff;
+--secondary-bg-color: #2F303A;
+--head-color: #212121;
+--text-color: #757575;
+--hover-color: #2196F3;
+}
+
+body {
+    font-family: roboto, sans-serif;
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    color: var(--head-color);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ----------HEADER*---------- */
+
+.logo {
+    color: var(--hover-color);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2em;
+    letter-spacing: 0.03em;
+}
+
+.logo span {
+    color: #000000;
+}
+
+.navigation{
+    color: var(--head-color);
+}
+
+.navigation:hover, 
+.navigation:focus,
+.mail-tel-header:hover,
+.mail-tel-header:focus,
+.mail-tel-footer:hover,
+.mail-tel-footer:focus {
+    color: var(--hover-color);
+}
+
+.mail-tel-header {
+    color: var(--text-color);
+}
+
+/* ----------FOOTER---------- */
+
+footer {
+    background-color: var(--secondary-bg-color);
+}
+
+footer .logo span {
+    color: #ffffff;
+}
+
+.address,
+.mail-tel-footer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71em;
+    letter-spacing: 0.03em;
+}
+
+.address {
+    color: #ffffff;
+}
+
+.mail-tel-footer {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ----------INDEX MAIN---------- */
+
+.hero > h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36em;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.hero > button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88em;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+
+.benefit h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.03em;
+}
+
+.benefit p {
+    font-size: 14px;
+    line-height: 1.71em;
+    letter-spacing: 0.03em;
+}
+
+.we-do h2,
+.team h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17em;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team {
+    background-color: #F5F4FA;
+}
+
+.team-member {
+    background-color: #FFFFFF;
+}
+
+.team h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19em;
+    letter-spacing: 0.03em;
+}
+
+.team p {
+    font-size: 16px;
+    line-height: 1.19em;
+    letter-spacing: 0.03em;
+}
+
+/* ----------PORTFOLIO MAIN---------- */
+
+.p-folio-button {
+    background: #F5F4FA;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62em;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--head-color);
+}
+
+.p-folio-button:hover,
+.p-folio-button:focus {
+    background-color: var(--hover-color);
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.project-list h2 {
+    font-size: 18px;
+    line-height: 2.0em;
+    letter-spacing: 0.06em;
+}
+
+.project-list p {
+    font-size: 16px;
+    line-height: 1.88em;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
