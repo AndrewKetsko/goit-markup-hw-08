@@ -103,6 +103,12 @@ footer .logo span {
     line-height: 1.88em;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+    background-color: #2196F3;
+}
+
+.hero>button:hover,
+.hero>button:focus {
+    background-color: #188CE8;
 }
 
 .benefit h3 {
