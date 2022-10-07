@@ -9,9 +9,11 @@
 body {
     font-family: roboto, sans-serif;
     color: var(--text-color);
+    letter-spacing: 0.03em;
+    font-size: 14px;
 }
 
-h1, h2, h3 {
+h2, h3 {
     color: var(--head-color);
 }
 
@@ -28,14 +30,12 @@ a {
 .logo {
     color: var(--hover-color);
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2em;
-    letter-spacing: 0.03em;
 }
 
-.logo span {
+.logo-header {
     color: #000000;
 }
 
@@ -62,7 +62,7 @@ footer {
     background-color: var(--secondary-bg-color);
 }
 
-footer .logo span {
+.logo-footer {
     color: #ffffff;
 }
 
@@ -70,13 +70,12 @@ footer .logo span {
 .mail-tel-footer {
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71em;
-    letter-spacing: 0.03em;
+    line-height: 1.71;
 }
 
 .address {
     color: #ffffff;
+    font-style: normal;
 }
 
 .mail-tel-footer {
@@ -85,11 +84,14 @@ footer .logo span {
 
 /* ----------INDEX MAIN---------- */
 
+.hero {
+    background-color: var(--secondary-bg-color);
+}
 .hero > h1 {
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36em;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -97,10 +99,11 @@ footer .logo span {
 }
 
 .hero > button {
+    font-family: roboto, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.88em;
+    line-height: 1.88;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     background-color: #2196F3;
@@ -114,15 +117,11 @@ footer .logo span {
 .benefit h3 {
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14em;
-    letter-spacing: 0.03em;
+    line-height: 1.14;
 }
 
 .benefit p {
-    font-size: 14px;
-    line-height: 1.71em;
-    letter-spacing: 0.03em;
+    line-height: 1.71;
 }
 
 .we-do h2,
@@ -130,9 +129,8 @@ footer .logo span {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.17em;
+    line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 .team {
@@ -147,14 +145,12 @@ footer .logo span {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.19em;
-    letter-spacing: 0.03em;
+    line-height: 1.19;
 }
 
 .team p {
     font-size: 16px;
-    line-height: 1.19em;
-    letter-spacing: 0.03em;
+    line-height: 1.19;
 }
 
 /* ----------PORTFOLIO MAIN---------- */
@@ -165,9 +161,8 @@ footer .logo span {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.62em;
+    line-height: 1.62;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--head-color);
 }
 
@@ -180,13 +175,12 @@ footer .logo span {
 
 .project-list h2 {
     font-size: 18px;
-    line-height: 2.0em;
+    line-height: 2.0;
     letter-spacing: 0.06em;
 }
 
 .project-list p {
     font-size: 16px;
-    line-height: 1.88em;
-    letter-spacing: 0.03em;
+    line-height: 1.88;
     color: var(--text-color);
 }
