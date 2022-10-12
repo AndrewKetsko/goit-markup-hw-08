@@ -118,6 +118,7 @@ header {
 .mail-tel {
     display: flex;
     margin-left: auto;
+    color: var(--text-color);
 }
 
 .mail-tel li:first-child {
