@@ -117,6 +117,7 @@ header {
 
 .mail-tel {
     display: flex;
+    align-items: center;
     margin-left: auto;
     color: var(--text-color);
 }
@@ -130,21 +131,16 @@ header {
     font-weight: 500;
 }
 
-.icon {
-    /* color: #000000; */
-    /* fill: #000000; */
+.mail-tel-icon {
+    margin-right: 10px;
+    fill: currentColor;
 }
-
 
 /* ----------FOOTER---------- */
 
 footer {
+    height: 252px;
     background-color: var(--secondary-bg-color);
-}
-
-footer .container {
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 
 footer .logo {
@@ -169,7 +165,57 @@ footer .logo {
 }
 
 .mail-tel-footer {
+    display: inline-block;
     color: rgba(255, 255, 255, 0.6);
+    padding-top: 9px;
+}
+
+.footer-flex {
+    display: flex;
+}
+
+.footer-addr {
+    margin-top: 60px;
+}
+
+.footer-join {
+    margin-left: 70px;
+    margin-top: 72px;
+}
+
+.footer-join h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.footer-insta {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.footer-insta a {
+    align-content: center;
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer-insta a:hover,
+.footer-insta a:focus {
+    background-color: var(--hover-color);
+}
+
+.footer-insta svg {
+    height: 44px;
+    width: 44px;
+    padding: 12px;
+    fill: #ffffff
 }
 
 /* ----------INDEX MAIN---------- */
@@ -177,6 +223,12 @@ footer .logo {
 .hero{
     text-align: center;
     background-color: var(--secondary-bg-color);
+    background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero .container {
@@ -244,6 +296,13 @@ padding-bottom: 94px;
     margin-right: 0;
 }
 
+.benefit-image-container {
+    height: 120px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;;
+}
+
 .benefit h3 {
     margin-bottom: 10px;
 
@@ -255,18 +314,22 @@ padding-bottom: 94px;
     line-height: 1.71;
 }
 
-.we-do .container {
+.we-do .container,
+.team .container,
+.clients .container {
     padding-bottom: 94px;
 }
 
 .we-do-flex,
-.team-flex {
+.team-flex,
+.clients-flex {
     display: flex;
     gap: 30px;
 }
 
 .we-do h2,
-.team h2 {
+.team h2,
+.clients h2 {
     margin-bottom: 50px;
 
     font-weight: 700;
@@ -287,9 +350,43 @@ padding-bottom: 94px;
     width: 270px;
     background-color: #FFFFFF;
     padding-bottom: 30px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     text-align: center;
+}
+
+.team-member-insta {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.team-member-insta a {
+    align-content: center;
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+}
+
+.team-member-insta a:hover,
+.team-member-insta a:focus {
+    background-color: var(--hover-color);
+    border-radius: 50%;
+}
+
+.team-member-insta svg {
+    height: 44px;
+    width: 44px;
+    padding: 12px;
+    fill: #AFB1B8
+}
+
+.team-member-insta svg:hover,
+.team-member-insta svg:focus {
+    fill: #FFFFFF;
 }
 
 .team h3 {
@@ -303,6 +400,38 @@ padding-bottom: 94px;
 .team p {
     font-size: 16px;
     line-height: 1.19;
+    padding-bottom: 16px;
+}
+
+.clients .container {
+    padding-top: 94px;
+}
+
+.clients li {
+    display: block;
+    height: 92px;
+}
+
+.clients a {
+    display: inline-block;
+    height: 92px;
+    width: 170px;
+    border: #AFB1B8;
+    /* padding: 16px 32px; */
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.clients svg {
+    height: 92px;
+    width: 170px;
+    padding: 16px 32px;
+    fill: #AFB1B8;
+}
+
+.clients svg:hover,
+.clients svg:focus {
+    fill: var(--hover-color);
 }
 
 /* ----------PORTFOLIO MAIN---------- */
@@ -339,6 +468,9 @@ padding-bottom: 94px;
     background-color: var(--hover-color);
     color: #FFFFFF;
     cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+    0px 1px 2px rgba(0, 0, 0, 0.08), 
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .projects {
@@ -363,6 +495,13 @@ padding-bottom: 94px;
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
+}
+
+.project-list li:hover,
+.project-list li:focus {
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+0px 1px 1px rgba(0, 0, 0, 0.14), 
+0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .projects p {
