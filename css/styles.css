@@ -127,6 +127,8 @@ header {
 }
 
 .mail-tel-header {
+    display: flex;
+    align-items: center;
     color: var(--text-color);
     font-weight: 500;
 }
@@ -428,6 +430,12 @@ padding-bottom: 94px;
 
 .clients svg:hover,
 .clients svg:focus {
+    fill: var(--hover-color);
+    border: 1px solid var(--hover-color);
+}
+
+.clients a:hover,
+.clients a:focus {
     fill: var(--hover-color);
 }
 
