@@ -129,6 +129,7 @@ header {
 .mail-tel-header {
     display: flex;
     align-items: center;
+
     color: var(--text-color);
     font-weight: 500;
 }
@@ -185,7 +186,7 @@ footer .logo {
     margin-top: 72px;
 }
 
-.footer-join h3 {
+.footer-join h2 {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
