@@ -57,9 +57,13 @@ img {
     /* outline: 2px solid black; */
 }
 
+.relative {
+    position: relative;
+}
+
 /* ----------HEADER*---------- */
 
-header {
+.header {
     border: 1px solid #ECECEC;
 }
 
@@ -95,6 +99,20 @@ header {
 
 .site-nav .item:not(:last-child) {
     margin-right: 40px;
+}
+
+.is-active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border: 2px solid var(--hover-color);
+    border-radius: 2px;
+}
+
+.navigation.is-active {
+    color: var(--hover-color);
 }
 
 .navigation{
@@ -231,6 +249,7 @@ footer .logo {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
     url(../images/hero.jpg);
+    /* min-width: 1600px; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -338,6 +357,23 @@ padding-bottom: 94px;
     text-align: center;
 }
 
+.we-do-absolute {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background: rgba(47, 48, 58, 0.8);
+}
+
 .team {
     background-color: #F5F4FA;
 }
@@ -416,8 +452,7 @@ padding-bottom: 94px;
     display: inline-block;
     height: 92px;
     width: 170px;
-    border: #AFB1B8;
-    /* padding: 16px 32px; */
+    color: #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
@@ -426,18 +461,58 @@ padding-bottom: 94px;
     height: 92px;
     width: 170px;
     padding: 16px 32px;
-    fill: #AFB1B8;
-}
-
-.clients svg:hover,
-.clients svg:focus {
-    fill: var(--hover-color);
-    border: 1px solid var(--hover-color);
+    fill: currentColor;
 }
 
 .clients a:hover,
 .clients a:focus {
+    color: var(--hover-color);
     fill: var(--hover-color);
+    border: 1px solid var(--hover-color);
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+    visibility: inherit;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    min-height: 500px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.modal-button {
+    position: absolute;
+    display: border-box;
+    top: 8px;
+    right: 8px;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.modal-button svg {
+    height: 18px;
+    width: 18px;
 }
 
 /* ----------PORTFOLIO MAIN---------- */
@@ -510,9 +585,30 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.projects p {
+.projects-text {
     font-size: 16px;
     line-height: 1.88;
     color: var(--text-color);
+}
+
+.projects-hover-text {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1.56;
+    color: #FFFFFF;
+    background-color: var(--hover-color);
+}
+
+.project-list li:hover .projects-hover-text,
+.project-list li:focus .projects-hover-text {
+    opacity: 1;
 }
 

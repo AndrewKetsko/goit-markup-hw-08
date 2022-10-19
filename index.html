@@ -22,7 +22,9 @@
         <nav class="main-nav">
           <a href="./index.html" class="logo">Web<span class="logo-header">Studio</span></a>
           <ul class="site-nav">
-            <li class="item"><a href="./index.html" class="navigation">Студія</a></li>
+            <li class="item relative">
+              <a href="./index.html" class="navigation is-active">Студія</a>
+            </li>
             <li class="item"><a href="./portfolio.html" class="navigation">Портфоліо</a></li>
             <li class="item"><a href="" class="navigation">Контакти</a></li>
           </ul>
@@ -32,14 +34,16 @@
             <a href="mailto:info@devstudio.com" class="mail-tel-header">
               <svg class="mail-tel-icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>info@devstudio.com
+              </svg>
+              info@devstudio.com
             </a>
           </li>
           <li class="mail-tel-body">
             <a href="tel:+380961111111" class="mail-tel-header">
               <svg class="mail-tel-icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>+38 096 111 11 11
+              </svg>
+              +38 096 111 11 11
             </a>
           </li>
         </ul>
@@ -52,7 +56,7 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button type="button">Замовити послугу</button>
+          <button type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="benefit">
@@ -102,14 +106,17 @@
         <div class="container">
           <h2>Чим ми займаємося</h2>
           <ul class="we-do-flex">
-            <li>
+            <li class="relative">
               <img src="./images/1mobapp.jpg" alt="Desktop applications" width="370" />
+              <h3 class="we-do-absolute">Десктопні додатки</h3>
             </li>
-            <li>
+            <li class="relative">
               <img src="./images/2deskapp.jpg" alt="mobile applications" width="370" />
+              <h3 class="we-do-absolute">Мобільні додатки</h3>
             </li>
-            <li>
+            <li class="relative">
               <img src="./images/3design.jpg" alt="design solutions" width="370" />
+              <h3 class="we-do-absolute">Дизайнерські рішення</h3>
             </li>
           </ul>
         </div>
@@ -313,58 +320,72 @@
     </main>
     <footer>
       <div class="container">
-       <div class="footer-flex">
-         <div class="footer-addr">
-          <a href="./index.html" class="logo">Web<span class="logo-footer">Studio</span></a>
-          <address class="address">
-            <ul>
+        <div class="footer-flex">
+          <div class="footer-addr">
+            <a href="./index.html" class="logo">Web<span class="logo-footer">Studio</span></a>
+            <address class="address">
+              <ul>
+                <li>
+                  <p>м. Київ, пр-т Лесі Українки, 26</p>
+                </li>
+                <li>
+                  <a href="mailto:info@devstudio.com" class="mail-tel-footer">info@devstudio.com</a>
+                </li>
+                <li>
+                  <a href="tel:+380961111111" class="mail-tel-footer">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-join">
+            <h2>ПРИЄДНУЙТЕСЬ</h2>
+            <ul class="footer-insta">
               <li>
-                <p>м. Київ, пр-т Лесі Українки, 26</p>
+                <a href="">
+                  <svg>
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="mailto:info@devstudio.com" class="mail-tel-footer">info@devstudio.com</a>
+                <a href="">
+                  <svg>
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="tel:+380961111111" class="mail-tel-footer">+38 096 111 11 11</a>
+                <a href="">
+                  <svg>
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <svg>
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="footer-join">
-          <h2>ПРИЄДНУЙТЕСЬ</h2>
-          <ul class="footer-insta">
-            <li>
-              <a href="">
-                <svg>
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <svg>
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <svg>
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <svg>
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-       </div>
       </div>
     </footer>
+
+    <!-- MODAL WINDOW -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-button" data-modal-close>
+          <svg class="modal-close">
+            <use href="./images/icons.svg#icon-X"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
