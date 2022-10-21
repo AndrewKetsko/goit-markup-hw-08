@@ -59,6 +59,7 @@ img {
 
 .relative {
     position: relative;
+    overflow: hidden;
 }
 
 /* ----------HEADER*---------- */
@@ -122,6 +123,8 @@ img {
 
     color: var(--head-color);
     font-weight: 500;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation:hover, 
@@ -150,6 +153,8 @@ img {
 
     color: var(--text-color);
     font-weight: 500;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-tel-icon {
@@ -189,6 +194,7 @@ footer .logo {
     display: inline-block;
     color: rgba(255, 255, 255, 0.6);
     padding-top: 9px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .footer-flex {
@@ -223,8 +229,9 @@ footer .logo {
     display: inline-block;
     height: 44px;
     width: 44px;
-    background: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .footer-insta a:hover,
@@ -253,6 +260,7 @@ footer .logo {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    min-width: 1600px;
 }
 
 .hero h1 {
@@ -286,6 +294,8 @@ footer .logo {
     letter-spacing: 0.06em;
     color: #FFFFFF;
     background-color: #2196F3;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero button:hover,
@@ -405,6 +415,10 @@ padding-bottom: 94px;
     display: inline-block;
     height: 44px;
     width: 44px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-member-insta a:hover,
@@ -417,7 +431,8 @@ padding-bottom: 94px;
     height: 44px;
     width: 44px;
     padding: 12px;
-    fill: #AFB1B8
+    fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-member-insta svg:hover,
@@ -455,6 +470,8 @@ padding-bottom: 94px;
     color: #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients svg {
@@ -471,17 +488,21 @@ padding-bottom: 94px;
     border: 1px solid var(--hover-color);
 }
 
+/*---------- MODAL WINDOW ----------*/
+
 .backdrop {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    opacity: 1;
     background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
-    visibility: inherit;
+    /* visibility: inherit; */
     opacity: 0;
     pointer-events: none;
 }
@@ -495,6 +516,14 @@ padding-bottom: 94px;
     min-height: 500px;
     background-color: #fff;
     border-radius: 4px;
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.backdrop.is-hidden .modal {
+    opacity: 0;
+    transform: translate(-50%, -50%);
+        /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms; */
 }
 
 .modal-button {
@@ -535,13 +564,18 @@ padding-bottom: 94px;
     padding: 6px 32px;
     display: inline-block;
 
-    background: #F5F4FA;
+    background-color: #F5F4FA;
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     color: var(--head-color);
+    box-shadow: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .p-folio-button:hover,
@@ -568,6 +602,7 @@ padding-bottom: 94px;
 
 .project-list li {
     flex-basis: calc((100% - 60px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects h2 {
@@ -592,8 +627,9 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 }
 
 .projects-hover-text {
-    opacity: 0;
+    /* opacity: 0; */
     position: absolute;
+    transform: translateY(100%);
     top: 0;
     left: 0;
     width: 100%;
@@ -604,11 +640,13 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     line-height: 28px;
     letter-spacing: 1.56;
     color: #FFFFFF;
-    background-color: var(--hover-color);
+    background-color: rgba(33, 150, 243, 0.9);;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-list li:hover .projects-hover-text,
-.project-list li:focus .projects-hover-text {
-    opacity: 1;
+.project-list a:hover .projects-hover-text,
+.project-list a:focus .projects-hover-text {
+    /* opacity: 1; */
+    transform: translateY(0);
 }
 
