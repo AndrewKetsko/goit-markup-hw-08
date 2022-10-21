@@ -534,14 +534,26 @@ padding-bottom: 94px;
     height: 30px;
     width: 30px;
     padding: 5px;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+    cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button:hover,
+.modal-button:focus {
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+    color: #FFFFFF;
 }
 
 .modal-button svg {
     height: 18px;
     width: 18px;
+    fill: currentColor;
 }
 
 /* ----------PORTFOLIO MAIN---------- */
