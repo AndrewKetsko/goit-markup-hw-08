@@ -14,33 +14,34 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/pfolio.min.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
   <body>
     <header class="header">
-      <div class="container all-nav">
-        <nav class="main-nav">
-          <a href="./index.html" class="logo">Web<span class="logo-header">Studio</span></a>
-          <ul class="site-nav">
-            <li class="item"><a href="./index.html" class="navigation">Студія</a></li>
-            <li class="item relative">
-              <a href="./portfolio.html" class="navigation is-active">Портфоліо</a>
+      <div class="container flex">
+        <nav class="flex">
+          <a href="./index.html" class="logo">Web<span class="logo--black">Studio</span></a>
+          <ul class="flex siteNav">
+            <li class="siteNav__item"><a href="./index.html" class="siteNav__link">Студія</a></li>
+            <li class="siteNav__item relative">
+              <a href="./portfolio.html" class="siteNav__link is-active">Портфоліо</a>
             </li>
-            <li class="item"><a href="" class="navigation">Контакти</a></li>
+            <li class="siteNav__item"><a href="" class="siteNav__link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="mail-tel">
-          <li class="mail-tel-body">
-            <a href="mailto:info@devstudio.com" class="mail-tel-header">
-              <svg class="mail-tel-icon" width="16" height="12">
+        <ul class="flex mailTel">
+          <li class="mailTel__item">
+            <a href="mailto:info@devstudio.com" class="flex mailTel__header">
+              <svg class="mailTel__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="mail-tel-body">
-            <a href="tel:+380961111111" class="mail-tel-header">
-              <svg class="mail-tel-icon" width="10" height="16">
+          <li class="mailTel__item">
+            <a href="tel:+380961111111" class="flex mailTel__header">
+              <svg class="mailTel__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -53,151 +54,151 @@
       <section class="portfolio">
         <div class="container">
           <h1 class="visually-hidden">Portfolio</h1>
-          <ul class="p-folio-buttons">
+          <ul class="flex p-folio-buttons">
             <li><button type="button" class="p-folio-button">Усі</button></li>
             <li><button type="button" class="p-folio-button">Веб-сайти</button></li>
             <li><button type="button" class="p-folio-button">Додатки</button></li>
             <li><button type="button" class="p-folio-button">Дизайн</button></li>
             <li><button type="button" class="p-folio-button">Маркетинг</button></li>
           </ul>
-          <ul class="project-list">
-            <li>
-              <a href="">
+          <ul class="flex flex--gap projects">
+            <li class="projects__list">
+              <a class="project__link" href="">
                 <div class="relative">
                   <img src="./images/portfolio1.jpg" alt="Технокряк" width="370" />
-                  <p class="projects-hover-text">
+                  <p class="project__hover-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
-                <div class="projects">
-                  <h2>Технокряк</h2>
-                  <p class="projects-text">Веб-сайт</p>
+                <div class="project">
+                  <h2 class="project__header">Технокряк</h2>
+                  <p class="project__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="projects__list">
+              <a class="project__link" href="">
                 <div class="relative">
                   <img
                     src="./images/portfolio2.jpg"
                     alt="Постер New Orlean vs Golden Star"
                     width="370"
                   />
-                  <p class="projects-hover-text">
+                  <p class="project__hover-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos esse nisi sapiente
                     incidunt aperiam atque vitae veritatis quas deleniti mollitia.
                   </p>
                 </div>
-                <div class="projects">
-                  <h2>Постер New Orlean vs Golden Star</h2>
-                  <p class="projects-text">Дизайн</p>
+                <div class="project">
+                  <h2 class="project__header">Постер New Orlean vs Golden Star</h2>
+                  <p class="project__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="projects__list">
+              <a class="project__link" href="">
                 <div class="relative">
                   <img src="./images/portfolio3.jpg" alt="Ресторан Seafood" width="370" />
-                  <p class="projects-hover-text">
+                  <p class="project__hover-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident debitis
                     pariatur sint sed aperiam temporibus explicabo maxime culpa recusandae officiis!
                   </p>
                 </div>
-                <div class="projects">
-                  <h2>Ресторан Seafood</h2>
-                  <p class="projects-text">Додаток</p>
+                <div class="project">
+                  <h2 class="project__header">Ресторан Seafood</h2>
+                  <p class="project__text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="projects__list">
+              <a class="project__link" href="">
                 <div class="relative">
                   <img src="./images/portfolio4.jpg" alt="Проєкт Prime" width="370" />
-                  <p class="projects-hover-text">
+                  <p class="project__hover-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nulla rerum
                     laudantium nobis ipsum sit officia enim eaque iusto neque.
                   </p>
                 </div>
-                <div class="projects">
-                  <h2>Проєкт Prime</h2>
-                  <p class="projects-text">Маркетинг</p>
+                <div class="project">
+                  <h2 class="project__header">Проєкт Prime</h2>
+                  <p class="project__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="projects__list">
+              <a class="project__link" href="">
                 <div class="relative">
                   <img src="./images/portfolio5.jpg" alt="Проєкт Boxes" width="370" />
-                  <p class="projects-hover-text">
+                  <p class="project__hover-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nulla rerum
                     laudantium nobis ipsum sit officia enim eaque iusto neque.
                   </p>
                 </div>
-                <div class="projects">
-                  <h2>Проєкт Boxes</h2>
-                  <p class="projects-text">Додаток</p>
+                <div class="project">
+                  <h2 class="project__header">Проєкт Boxes</h2>
+                  <p class="project__text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="projects__list">
+              <a class="project__link" href="">
                 <div class="relative">
                   <img src="./images/portfolio6.jpg" alt="Inspiration has no Borders" width="370" />
-                  <p class="projects-hover-text">
+                  <p class="project__hover-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nulla rerum
                     laudantium nobis ipsum sit officia enim eaque iusto neque.
                   </p>
                 </div>
-                <div class="projects">
-                  <h2>Inspiration has no Borders</h2>
-                  <p class="projects-text">Веб-сайт</p>
+                <div class="project">
+                  <h2 class="project__header">Inspiration has no Borders</h2>
+                  <p class="project__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="projects__list">
+              <a class="project__link" href="">
                 <div class="relative">
                   <img src="./images/portfolio7.jpg" alt="Видання Limited Edition" width="370" />
-                  <p class="projects-hover-text">
+                  <p class="project__hover-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nulla rerum
                     laudantium nobis ipsum sit officia enim eaque iusto neque.
                   </p>
                 </div>
-                <div class="projects">
-                  <h2>Видання Limited Edition</h2>
-                  <p class="projects-text">Дизайн</p>
+                <div class="project">
+                  <h2 class="project__header">Видання Limited Edition</h2>
+                  <p class="project__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="projects__list">
+              <a class="project__link" href="">
                 <div class="relative">
                   <img src="./images/portfolio8.jpg" alt="Проєкт LAB" width="370" />
-                  <p class="projects-hover-text">
+                  <p class="project__hover-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nulla rerum
                     laudantium nobis ipsum sit officia enim eaque iusto neque.
                   </p>
                 </div>
-                <div class="projects">
-                  <h2>Проєкт LAB</h2>
-                  <p class="projects-text">Маркетинг</p>
+                <div class="project">
+                  <h2 class="project__header">Проєкт LAB</h2>
+                  <p class="project__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="projects__list">
+              <a class="project__link" href="">
                 <div class="relative">
                   <img src="./images/portfolio9.jpg" alt="Growing Business" width="370" />
-                  <p class="projects-hover-text">
+                  <p class="project__hover-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nulla rerum
                     laudantium nobis ipsum sit officia enim eaque iusto neque.
                   </p>
                 </div>
-                <div class="projects">
-                  <h2>Growing Business</h2>
-                  <p class="projects-text">Додаток</p>
+                <div class="project">
+                  <h2 class="project__header">Growing Business</h2>
+                  <p class="project__text">Додаток</p>
                 </div>
               </a>
             </li>
@@ -205,66 +206,66 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <div class="footer-flex">
-          <div class="footer-addr">
-            <a href="./index.html" class="logo">Web<span class="logo-footer">Studio</span></a>
-            <address class="address">
+        <div class="flex">
+          <div class="footerAddr">
+            <a href="./index.html" class="logo">Web<span class="logo--white">Studio</span></a>
+            <address class="footer__address">
               <ul>
                 <li>
                   <p>м. Київ, пр-т Лесі Українки, 26</p>
                 </li>
                 <li>
-                  <a href="mailto:info@devstudio.com" class="mail-tel-footer">info@devstudio.com</a>
+                  <a href="mailto:info@devstudio.com" class="mailTel__footer">info@devstudio.com</a>
                 </li>
                 <li>
-                  <a href="tel:+380961111111" class="mail-tel-footer">+38 096 111 11 11</a>
+                  <a href="tel:+380961111111" class="mailTel__footer">+38 096 111 11 11</a>
                 </li>
               </ul>
             </address>
           </div>
-          <div class="footer-join">
-            <h2>ПРИЄДНУЙТЕСЬ</h2>
-            <ul class="footer-insta">
+          <div class="join">
+            <h2 class="join__header">ПРИЄДНУЙТЕСЬ</h2>
+            <ul class="flex join__insta">
               <li>
-                <a href="">
-                  <svg>
+                <a class="join__link" href="">
+                  <svg class="join__icon">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a href="">
-                  <svg>
+                <a class="join__link" href="">
+                  <svg class="join__icon">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a href="">
-                  <svg>
+                <a class="join__link" href="">
+                  <svg class="join__icon">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a href="">
-                  <svg>
+                <a class="join__link" href="">
+                  <svg class="join__icon">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="footer-form">
-            <h2>Підпишіться на розсилку</h2>
-            <form name="subscribe">
+          <div class="subscribe">
+            <h2 class="form__header">Підпишіться на розсилку</h2>
+            <form name="subscribe" class="flex subscribe__form">
               <label>
-                <input type="email" name="email" placeholder="E-mail" class="subscribe-input" />
+                <input type="email" name="email" placeholder="E-mail" class="subscribe__input" />
               </label>
-              <button type="submit" class="submit-flex">
-                  <span>Підписатися</span>
+              <button type="submit" class="flex subscribe__button">
+                  <span class="subscribe__text">Підписатися</span>
                   <svg width="24px" height="24px">
                     <use href="./images/icons.svg#icon-send"></use>
                   </svg>

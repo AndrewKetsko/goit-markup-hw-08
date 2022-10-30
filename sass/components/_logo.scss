@@ -1,0 +1,21 @@
+.logo {
+    margin-right: 93px;
+    color: $hoverColor;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+
+    &--black{
+        color: #000000;
+    }
+
+    &--white {
+        color: $primeBGColor;
+    }
+
+    .footerAddr & {
+        display: inline-block;
+        margin: 0 0 20px 0;
+    }
+}

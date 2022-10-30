@@ -1,0 +1,70 @@
+.team {
+    background-color: $thirdBGColor;
+
+    & .container {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    &__image {
+        margin-bottom: 30px;
+    }
+
+    &__member {
+        width: 270px;
+        background-color: var(--primary-bg-color);
+        padding-bottom: 30px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        text-align: center;
+    }
+
+    &__insta {
+            justify-content: space-around;
+            margin-left: 32px;
+            margin-right: 32px;
+    }
+
+    &__link {
+        align-content: center;
+        display: inline-block;
+        height: 44px;
+        width: 44px;
+        border-radius: 50%;
+        background-color: var(--primary-bg-color);
+        overflow: hidden;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover, &:focus {
+            background-color: $hoverColor;
+            border-radius: 50%;
+        }
+    }
+
+    &__icon {
+        height: 44px;
+        width: 44px;
+        padding: 12px;
+        fill: $iconColor;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover, &:focus {
+            fill: $primeBGColor;
+        }
+    }
+
+    &__name {
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 1.19;
+        padding-bottom: 16px;
+    }
+}

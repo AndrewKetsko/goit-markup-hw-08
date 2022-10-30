@@ -1,0 +1,36 @@
+.clients {
+
+    & .container {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    &__list {
+        display: block;
+        height: 92px;
+    }
+
+    &__link {
+        display: inline-block;
+        height: 92px;
+        width: 170px;
+        color: $iconColor;
+        border: 1px solid $iconColor;
+        border-radius: 4px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover, &:focus {
+                color: $hoverColor;
+                fill: $hoverColor;
+                border: 1px solid $hoverColor;
+            }
+    }
+
+    &__icon {
+        height: 92px;
+        width: 170px;
+        padding: 16px 32px;
+        fill: currentColor;
+    }
+}

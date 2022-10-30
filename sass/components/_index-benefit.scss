@@ -1,0 +1,29 @@
+.benefit {
+
+    & .container {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    &__list {
+        height: 248px;
+        flex-basis: calc((100% - 90px) / 4);
+    }
+
+    &__imageContainer {
+        height: 120px;
+        padding: 25px 100px;
+        margin-bottom: 30px;
+        background-color: $thirdBGColor;
+    }
+
+    &__header {
+        margin-bottom: 10px;
+        font-weight: 700;
+        line-height: 1.14;
+    }
+
+    &__text {
+        line-height: 1.71;
+    }
+}
