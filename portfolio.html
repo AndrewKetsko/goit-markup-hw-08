@@ -19,20 +19,22 @@
   </head>
   <body>
     <header class="header">
-      <div class="container flex">
-        <nav class="flex">
+      <div class="container header__flex relative">
+        <nav class="nav__flex">
           <a href="./index.html" class="logo">Web<span class="logo--black">Studio</span></a>
-          <ul class="flex siteNav">
-            <li class="siteNav__item"><a href="./index.html" class="siteNav__link">Студія</a></li>
+          <ul class="siteNav">
+            <li class="siteNav__item relative">
+              <a href="./index.html" class="siteNav__link">Студія</a>
+            </li>
             <li class="siteNav__item relative">
               <a href="./portfolio.html" class="siteNav__link is-active">Портфоліо</a>
             </li>
             <li class="siteNav__item"><a href="" class="siteNav__link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="flex mailTel">
+        <ul class="mailTel">
           <li class="mailTel__item">
-            <a href="mailto:info@devstudio.com" class="flex mailTel__header">
+            <a href="mailto:info@devstudio.com" class="mailTel__header">
               <svg class="mailTel__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
@@ -40,7 +42,7 @@
             </a>
           </li>
           <li class="mailTel__item">
-            <a href="tel:+380961111111" class="flex mailTel__header">
+            <a href="tel:+380961111111" class="mailTel__header">
               <svg class="mailTel__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -48,24 +50,30 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="mobileMenu__openButton js-open-menu" aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg class="mobileMenu__openIcon">
+            <use href="./images/icons.svg#menu_mobile"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
       <section class="portfolio">
         <div class="container">
           <h1 class="visually-hidden">Portfolio</h1>
-          <ul class="flex p-folio-buttons">
+          <ul class="p-folio-buttons">
             <li><button type="button" class="p-folio-button">Усі</button></li>
             <li><button type="button" class="p-folio-button">Веб-сайти</button></li>
             <li><button type="button" class="p-folio-button">Додатки</button></li>
             <li><button type="button" class="p-folio-button">Дизайн</button></li>
             <li><button type="button" class="p-folio-button">Маркетинг</button></li>
           </ul>
-          <ul class="flex flex--gap projects">
+          <ul class="projects">
             <li class="projects__list">
               <a class="project__link" href="">
                 <div class="relative">
-                  <img src="./images/portfolio1.jpg" alt="Технокряк" width="370" />
+                  <img src="./images/portfolio1.jpg" alt="Технокряк"/>
                   <p class="project__hover-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -100,7 +108,7 @@
             <li class="projects__list">
               <a class="project__link" href="">
                 <div class="relative">
-                  <img src="./images/portfolio3.jpg" alt="Ресторан Seafood" width="370" />
+                  <img src="./images/portfolio3.jpg" alt="Ресторан Seafood"/>
                   <p class="project__hover-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident debitis
                     pariatur sint sed aperiam temporibus explicabo maxime culpa recusandae officiis!
@@ -115,7 +123,7 @@
             <li class="projects__list">
               <a class="project__link" href="">
                 <div class="relative">
-                  <img src="./images/portfolio4.jpg" alt="Проєкт Prime" width="370" />
+                  <img src="./images/portfolio4.jpg" alt="Проєкт Prime"/>
                   <p class="project__hover-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nulla rerum
                     laudantium nobis ipsum sit officia enim eaque iusto neque.
@@ -130,7 +138,7 @@
             <li class="projects__list">
               <a class="project__link" href="">
                 <div class="relative">
-                  <img src="./images/portfolio5.jpg" alt="Проєкт Boxes" width="370" />
+                  <img src="./images/portfolio5.jpg" alt="Проєкт Boxes"/>
                   <p class="project__hover-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nulla rerum
                     laudantium nobis ipsum sit officia enim eaque iusto neque.
@@ -145,7 +153,7 @@
             <li class="projects__list">
               <a class="project__link" href="">
                 <div class="relative">
-                  <img src="./images/portfolio6.jpg" alt="Inspiration has no Borders" width="370" />
+                  <img src="./images/portfolio6.jpg" alt="Inspiration has no Borders"/>
                   <p class="project__hover-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nulla rerum
                     laudantium nobis ipsum sit officia enim eaque iusto neque.
@@ -160,7 +168,7 @@
             <li class="projects__list">
               <a class="project__link" href="">
                 <div class="relative">
-                  <img src="./images/portfolio7.jpg" alt="Видання Limited Edition" width="370" />
+                  <img src="./images/portfolio7.jpg" alt="Видання Limited Edition"/>
                   <p class="project__hover-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nulla rerum
                     laudantium nobis ipsum sit officia enim eaque iusto neque.
@@ -175,7 +183,7 @@
             <li class="projects__list">
               <a class="project__link" href="">
                 <div class="relative">
-                  <img src="./images/portfolio8.jpg" alt="Проєкт LAB" width="370" />
+                  <img src="./images/portfolio8.jpg" alt="Проєкт LAB"/>
                   <p class="project__hover-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nulla rerum
                     laudantium nobis ipsum sit officia enim eaque iusto neque.
@@ -190,7 +198,7 @@
             <li class="projects__list">
               <a class="project__link" href="">
                 <div class="relative">
-                  <img src="./images/portfolio9.jpg" alt="Growing Business" width="370" />
+                  <img src="./images/portfolio9.jpg" alt="Growing Business"/>
                   <p class="project__hover-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nulla rerum
                     laudantium nobis ipsum sit officia enim eaque iusto neque.
@@ -208,7 +216,7 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="flex">
+        <div class="footer__flex">
           <div class="footerAddr">
             <a href="./index.html" class="logo">Web<span class="logo--white">Studio</span></a>
             <address class="footer__address">
@@ -227,7 +235,7 @@
           </div>
           <div class="join">
             <h2 class="join__header">ПРИЄДНУЙТЕСЬ</h2>
-            <ul class="flex join__insta">
+            <ul class="join__insta">
               <li>
                 <a class="join__link" href="">
                   <svg class="join__icon">
@@ -260,20 +268,65 @@
           </div>
           <div class="subscribe">
             <h2 class="form__header">Підпишіться на розсилку</h2>
-            <form name="subscribe" class="flex subscribe__form">
+            <form name="subscribe" class="subscribe__form">
               <label>
                 <input type="email" name="email" placeholder="E-mail" class="subscribe__input" />
               </label>
-              <button type="submit" class="flex subscribe__button">
-                  <span class="subscribe__text">Підписатися</span>
-                  <svg width="24px" height="24px">
-                    <use href="./images/icons.svg#icon-send"></use>
-                  </svg>
+              <button type="submit" class="subscribe__button">
+                <span class="subscribe__text">Підписатися</span>
+                <svg width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
               </button>
             </form>
           </div>
         </div>
       </div>
     </footer>
+
+    <!-- MOBILE MENU WINDOW -->
+    <div class="mobileMenu__backdrop js-menu-container">
+      <button type="button" class="mobileMenu__closeButton js-close-menu">
+          <svg class="mobileMenu__closeIcon">
+            <use href="./images/icons.svg#close_mobile"></use>
+          </svg>
+        </button>
+      <div class="mobileMenu">
+        <ul class="">
+          <li class="mobileMenu__listLink">
+            <a href="./index.html" class="mobileMenu__link">Студія</a>
+          </li>
+          <li class="mobileMenu__listLink">
+            <a href="./portfolio.html" class="mobileMenu__link">Портфоліо</a>
+          </li>
+          <li class="mobileMenu__listLink">
+            <a href="" class="mobileMenu__link">Контакти</a>
+          </li>
+        </ul>
+        <ul class="mobileMenu__MailTel">
+          <li class="mobileMenu__listMailTel">
+            <a href="tel:+380961111111" class="mobileMenu__tel"> +38 096 111 11 11 </a>
+          </li>
+          <li class="mobileMenu__listMailTel">
+            <a href="mailto:info@devstudio.com" class="mobileMenu__mail"> info@devstudio.com </a>
+          </li>
+        </ul>
+        <ul class="mobileMenu__listInsta">
+          <li class="mobileMenu__insta"><a href="" class="mobileMenu__instaLink">Instagram</a></li>
+          <li class="mobileMenu__insta"><a href="" class="mobileMenu__instaLink">Twitter</a></li>
+          <li class="mobileMenu__insta"><a href="" class="mobileMenu__instaLink">Facebook</a></li>
+          <li class="mobileMenu__insta"><a href="" class="mobileMenu__instaLink">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script> 
   </body>
 </html>

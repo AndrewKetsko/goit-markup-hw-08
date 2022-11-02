@@ -3,6 +3,12 @@
         padding-bottom: 94px;
     }
 
+    &__flex {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
     &__text {
         display: inline-block;
         position: absolute;
@@ -18,5 +24,9 @@
         padding-top: 27px;
         padding-bottom: 27px;
         background: rgba(47, 48, 58, 0.8);
+    }
+
+    @media screen and (max-width:( calc($desk - 1px))) {
+        display: none;        
     }
 }

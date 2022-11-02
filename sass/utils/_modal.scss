@@ -19,13 +19,30 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
+    width: 100%;
+    
     min-height: 500px;
     padding: 40px;
     background-color: $primeBGColor;
     border-radius: 4px;
     opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+    @media screen and (max-width: $mob) {
+        max-width: 450px;
+        }
+    
+    @media screen and (min-width: $mob) {
+        width: 450px;
+    }
+        
+    @media screen and (min-width: $tab) {
+        width: 450px;
+    }
+        
+    @media screen and (min-width: $desk) {
+        width: 528px;
+    }
 
     .backdrop.is-hidden & {
         opacity: 0;
@@ -71,6 +88,13 @@
         font-size: 12px;
         line-height: calc(14/12);
         letter-spacing: 0.01em;
+
+        &--bigger {
+            
+            @media screen and (min-width: $desk) {
+                font-size: 14px;
+                }
+        }
     }
 
     &__icon {
@@ -107,6 +131,8 @@
     }
 
     &__agree-block {
+        display: inline-flex;
+        align-items: center;
         margin-left: auto;
         margin-right: auto;
     }

@@ -1,5 +1,7 @@
-@import 'utils/_colors.scss';
-@import 'utils/_all.scss';
+@import 'utils/colors';
+@import 'utils/points';
+@import 'utils/all';
+@import 'components/mobile-menu';
 @import 'components/logo';
 @import 'components/header';
 @import 'components/index-hero';

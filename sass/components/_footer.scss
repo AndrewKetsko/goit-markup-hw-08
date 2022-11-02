@@ -1,9 +1,46 @@
 .footer {
-    height: 252px;
+    min-height: 252px;
     background-color: $secondBGColor;
 
+    .container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    &__flex {
+        
+        @media screen and (min-width: $mob) and (max-width: 767px){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            @media screen and (min-width: $tab) {
+                
+            }
+        
+        @media screen and (min-width: $desk) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &--tab {
+            @media screen and (min-width: $tab) {
+                display: flex;
+                align-items: center;
+            }
+        }
+        
+    }
+
     &Addr {
-        margin-top: 60px;
+
+        @media screen and (min-width: $tab) and (max-width: calc($desk - 1px) ) {
+            display: inline-block;
+            margin-left: 76px;
+            // height: 140px;
+        }
     }
 
     &__address {
@@ -11,6 +48,10 @@
         font-style: normal;
         font-weight: 400;
         line-height: 1.71;
+       
+        @media screen and (max-width: calc($desk - 1px) ) {
+            text-align: center;
+        }
     }
 }
 
@@ -29,8 +70,7 @@
 }
 
 .join {
-    margin-left: 70px;
-    margin-top: 72px;
+    
 
     &__header {
         font-weight: 700;
@@ -39,11 +79,22 @@
         letter-spacing: 0.03em;
         color: $primeBGColor;
         text-transform: uppercase;
+
+        @media screen and (max-width:  calc($desk - 1px) ) {
+            text-align: center;
+        }
     }
 
     &__insta {
+        display: flex;
+        align-items: center;
+        
         margin-top: 20px;
         gap: 10px;
+
+        @media screen and (max-width:  calc($desk - 1px) ) {
+            justify-content: center;
+            }
     }
 
     &__link {
@@ -66,19 +117,40 @@
         padding: 12px;
         fill: $primeBGColor;
     }
+
+    @media screen and (min-width: $tab) and (max-width:  calc($desk - 1px) ) {
+       display: inline-block;
+    //    flex-direction: column;
+    //    height: 140px;
+       margin-left: 165px;
+    //    padding-bottom: 42px;
+    }
+
+    @media screen and (min-width: $desk) {
+        margin-left: 70px;
+        // margin-top: 72px;
+        }
+
+    @media screen and (max-width: 767px) {
+        margin-top: 60px;
+        }
 }
 
 .subscribe {
-    margin-top: 72px;
-    margin-left: auto;
+    margin-top: 60px;
 
     &__form {
         margin-top: 20px;
+
+        @media screen and (min-width: $desk) {
+            display: flex;
+            align-items: center;
+        }
     }
 
     &__input {
         height: 50px;
-        width: 358px;
+        width: 100%;
         padding-left: 16px;
         background-color: inherit;
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -88,14 +160,32 @@
         line-height: 1.25;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
+
+        @media screen and (min-width: $mob) {
+            width: 450px;
+            }
+        
+            @media screen and (min-width: $tab) {
+            width: 450px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            }
+
+        @media screen and (min-width: $desk) {
+                width: 358px;
+            }
     }
 
     &__button {
+        display: flex;
+        align-items: center;
         gap: 10px;
         height: 50px;
         width: 200px;
         background-color: $hoverColor;
-        margin-left: 12px;
+        margin: 20px auto 0px;
+
         padding: 10px 28px;
         cursor: pointer;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -105,6 +195,11 @@
 
         &:hover, &:focus {
             background-color: $hoverBtnColor;
+        }
+
+        @media screen and (min-width: $desk) {
+            margin-left: 12px;
+            margin-top: 0;
         }
     }
 
@@ -116,6 +211,12 @@
     color: $primeBGColor;
     font-family: roboto, sans-serif;
     }
+
+        @media screen and (min-width: $desk) {
+            // margin-top: 72px;
+            margin-top: 0;
+            margin-left: auto;
+        }
 }
 
 .form__header {
@@ -125,4 +226,8 @@
     letter-spacing: 0.03em;
     color: $primeBGColor;
     text-transform: uppercase;
+
+    @media screen and (max-width:  calc($desk - 1px) ) {
+            text-align: center;
+        }
 }

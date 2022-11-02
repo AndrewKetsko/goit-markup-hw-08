@@ -1,18 +1,45 @@
 .benefit {
 
     .container {
-        padding-top: 94px;
-        padding-bottom: 94px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        @media screen and (min-width: $desk) {
+                padding-top: 94px;
+                padding-bottom: 94px;
+            }
+    }
+
+    &__flex {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
     }
 
     &__list {
-        height: 248px;
-        flex-basis: calc((100% - 90px) / 4);
+
+        @media screen and (min-width: $mob) {
+            height: 226px;
+            flex-basis: 100%;
+            }
+
+        @media screen and (min-width: $tab) {
+            height: 226px;
+            flex-basis: calc((100% - 30px) / 2);
+            }
+        
+        @media screen and (min-width: $desk) {
+            height: 248px;
+            flex-basis: calc((100% - 90px) / 4);
+            }
     }
 
     &__imageContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 120px;
-        padding: 25px 100px;
         margin-bottom: 30px;
         background-color: $thirdBGColor;
     }
@@ -21,6 +48,10 @@
         margin-bottom: 10px;
         font-weight: 700;
         line-height: 1.14;
+        
+        @media screen and (max-width: 767px) {
+            text-align: center;
+            }
     }
 
     &__text {

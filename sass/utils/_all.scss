@@ -48,24 +48,27 @@ img {
 }
 
 .container {
-    width: 1200px;
+    // width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    /* outline: 2px solid black; */
+    // outline: 2px solid black;
+
+    @media screen and (min-width: $mob) {
+        width: $mob;
+    }
+    
+    @media screen and (min-width: $tab) {
+        width: $tab;
+    }
+    
+    @media screen and (min-width: $desk) {
+        width: $desk;
+    }
 }
 
 .relative {
     position: relative;
     overflow: hidden;
-}
-
-.flex {
-    display: flex;
-    align-items: center;
-    
-    &--gap{
-        gap: 30px;
-    }
 }
 
 .is-active::after {
@@ -79,9 +82,14 @@ img {
 }
 
 .second-header {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
+
+    @media screen and (min-width: $desk) {
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
 }

@@ -1,19 +1,42 @@
 .clients {
 
     .container {
-        padding-top: 94px;
-        padding-bottom: 94px;
+        padding-top: 60px;
+            padding-bottom: 60px;
+        
+            @media screen and (min-width: $desk) {
+                padding-top: 94px;
+                padding-bottom: 94px;
+            }
+    }
+
+    &__flex {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
     }
 
     &__list {
         display: block;
         height: 92px;
+        flex-basis: calc((100% - 30px) / 2);
+
+        @media screen and (min-width: $tab) {
+                // height: 226px;
+            flex-basis: calc((100% - 60px) / 3);
+            }
+        
+        @media screen and (min-width: $desk) {
+                // height: 248px;
+            flex-basis: calc((100% - 150px) / 6);
+            }
     }
 
     &__link {
         display: inline-block;
         height: 92px;
-        width: 170px;
+        width: 100%;
         color: $iconColor;
         border: 1px solid $iconColor;
         border-radius: 4px;
@@ -29,7 +52,7 @@
 
     &__icon {
         height: 92px;
-        width: 170px;
+        width: 100%;
         padding: 16px 32px;
         fill: currentColor;
     }

@@ -2,8 +2,20 @@
     background-color: $thirdBGColor;
 
     .container {
-        padding-top: 94px;
-        padding-bottom: 94px;
+        padding-top: 60px;
+            padding-bottom: 60px;
+        
+            @media screen and (min-width: $desk) {
+                padding-top: 94px;
+                padding-bottom: 94px;
+            }
+    }
+
+    &__flex {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
     }
 
     &__image {
@@ -11,7 +23,6 @@
     }
 
     &__member {
-        width: 270px;
         background-color: var(--primary-bg-color);
         padding-bottom: 30px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -19,10 +30,25 @@
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
         text-align: center;
+
+        @media screen and (min-width: $mob) {
+            flex-basis: 100%;
+        }
+        
+        @media screen and (min-width: $tab) {
+            flex-basis: calc((100% - 30px) / 2);
+        }
+        
+        @media screen and (min-width: $desk) {
+            flex-basis: calc((100% - 90px) / 4);
+        }
     }
 
     &__insta {
-            justify-content: space-around;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
             margin-left: 32px;
             margin-right: 32px;
     }
