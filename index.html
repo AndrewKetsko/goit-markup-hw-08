@@ -50,8 +50,12 @@
             </a>
           </li>
         </ul>
-        <button type="button" class="mobileMenu__openButton js-open-menu" aria-expanded="false"
-          aria-controls="mobile-menu">
+        <button
+          type="button"
+          class="mobileMenu__openButton js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="mobileMenu__openIcon">
             <use href="./images/icons.svg#menu_mobile"></use>
           </svg>
@@ -124,15 +128,42 @@
           <h2 class="second-header">Чим ми займаємося</h2>
           <ul class="we-do__flex">
             <li class="relative">
-              <img src="./images/1mobapp.jpg" alt="Desktop applications" width="370" />
+              <img
+                srcset="
+                  ./images/1mobapp.jpg     370w,
+                  ./images/1mobapp@2x.jpg  740w,
+                  ./images/1mobapp@3x.jpg 1110w
+                "
+                sizes="(min-width: 768px) 33vw"
+                src="./images/1mobapp.jpg"
+                alt="Desktop applications"
+              />
               <h3 class="we-do__text">Десктопні додатки</h3>
             </li>
             <li class="relative">
-              <img src="./images/2deskapp.jpg" alt="mobile applications" width="370" />
+              <img
+                srcset="
+                  ./images/2deskapp.jpg     370w,
+                  ./images/2deskapp@2x.jpg  740w,
+                  ./images/2deskapp@3x.jpg 1110w
+                "
+                sizes="(min-width: 768px) 33vw"
+                src="./images/2deskapp.jpg"
+                alt="mobile applications"
+              />
               <h3 class="we-do__text">Мобільні додатки</h3>
             </li>
             <li class="relative">
-              <img src="./images/3design.jpg" alt="design solutions" width="370" />
+              <img
+                srcset="
+                  ./images/3design.jpg     370w,
+                  ./images/3design@2x.jpg  740w,
+                  ./images/3design@3x.jpg 1110w
+                "
+                sizes="(min-width: 768px) 33vw"
+                src="./images/3design.jpg"
+                alt="design solutions"
+              />
               <h3 class="we-do__text">Дизайнерські рішення</h3>
             </li>
           </ul>
@@ -143,7 +174,15 @@
           <h2 class="second-header">Наша команда</h2>
           <ul class="team__flex">
             <li class="team__member">
-              <img class="team__image" src="./images/4igor.jpg" alt="Product Designer" />
+              <img class="team__image" 
+              srcset="
+                  ./images/4igor.jpg     270w,
+                  ./images/4igor@2x.jpg  540w,
+                  ./images/4igor@3x.jpg  810w
+                "
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+              src="./images/4igor.jpg" 
+              alt="Product Designer" />
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p class="team__text">Product Designer</p>
               <ul class="team__insta">
@@ -178,7 +217,16 @@
               </ul>
             </li>
             <li class="team__member">
-              <img class="team__image" src="./images/5olga.jpg" alt="Frontend Developer" />
+              <img 
+              srcset="
+                  ./images/5olga.jpg     270w,
+                  ./images/5olga@2x.jpg  540w,
+                  ./images/5olga@3x.jpg  810w
+                "
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+              class="team__image" 
+              src="./images/5olga.jpg" 
+              alt="Frontend Developer" />
               <h3 class="team__name">Ольга Рєпіна</h3>
               <p class="team__text">Frontend Developer</p>
               <ul class="team__insta">
@@ -213,7 +261,16 @@
               </ul>
             </li>
             <li class="team__member">
-              <img class="team__image" src="./images/6mykola.jpg" alt="Marketing" />
+              <img 
+              srcset="
+                  ./images/6mykola.jpg     270w,
+                  ./images/6mykola@2x.jpg  540w,
+                  ./images/6mykola@3x.jpg  810w
+                "
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+              class="team__image" 
+              src="./images/6mykola.jpg" 
+              alt="Marketing" />
               <h3 class="team__name">Микола Тарасов</h3>
               <p class="team__text">Marketing</p>
               <ul class="team__insta">
@@ -248,7 +305,16 @@
               </ul>
             </li>
             <li class="team__member">
-              <img class="team__image" src="./images/7mykhailo.jpg" alt="UI Designer" />
+              <img 
+              srcset="
+                  ./images/7mykhailo.jpg     270w,
+                  ./images/7mykhailo@2x.jpg  540w,
+                  ./images/7mykhailo@3x.jpg  810w
+                "
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+              class="team__image" 
+              src="./images/7mykhailo.jpg" 
+              alt="UI Designer" />
               <h3 class="team__name">Михайло Єрмаков</h3>
               <p class="team__text">UI Designer</p>
               <ul class="team__insta">
@@ -486,10 +552,10 @@
     <!-- MOBILE MENU WINDOW -->
     <div class="mobileMenu__backdrop js-menu-container" id="mobile-menu">
       <button type="button" class="mobileMenu__closeButton js-close-menu">
-          <svg class="mobileMenu__closeIcon">
-            <use href="./images/icons.svg#close_mobile"></use>
-          </svg>
-        </button>
+        <svg class="mobileMenu__closeIcon">
+          <use href="./images/icons.svg#close_mobile"></use>
+        </svg>
+      </button>
       <div class="mobileMenu">
         <ul class="">
           <li class="mobileMenu__listLink">
