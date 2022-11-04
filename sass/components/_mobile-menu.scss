@@ -102,7 +102,7 @@
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
-        font-size: 40px;
+        font-size: 10vw;
         line-height: 1.175;
         letter-spacing: 0.02em;
         color: $headColor;
@@ -110,16 +110,24 @@
         &:hover, &:focus {
             color: $hoverColor;
         }
+
+        @media screen and (min-width: 380px) {
+            font-size: 40px;
+        }
     }
 
     &__tel {
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
-        font-size: 34px;
+        font-size: 8vw;
         line-height: calc(40/34);
         letter-spacing: 0.02em;
         color: $hoverColor;
+
+        @media screen and (min-width: 380px) {
+            font-size: 34px;
+        }
     }
 
     &__mail {
@@ -148,10 +156,14 @@
             font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 500;
-                font-size: 18px;
+                font-size: 3vw;
                 line-height: 1.22;
                 letter-spacing: 0.02em;
                 color: $hoverColor;
+
+                @media screen and (min-width: 450px) {
+                        font-size: 18px;
+                    }
         }
     }
 }

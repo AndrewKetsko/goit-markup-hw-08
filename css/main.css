@@ -192,7 +192,7 @@ img {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 10vw;
   line-height: 1.175;
   letter-spacing: 0.02em;
   color: #212121;
@@ -200,14 +200,24 @@ img {
 .mobileMenu__link:hover, .mobileMenu__link:focus {
   color: #2196F3;
 }
+@media screen and (min-width: 380px) {
+  .mobileMenu__link {
+    font-size: 40px;
+  }
+}
 .mobileMenu__tel {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 8vw;
   line-height: 1.1764705882;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+@media screen and (min-width: 380px) {
+  .mobileMenu__tel {
+    font-size: 34px;
+  }
 }
 .mobileMenu__mail {
   font-family: "Roboto";
@@ -230,10 +240,15 @@ img {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 3vw;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+@media screen and (min-width: 450px) {
+  .mobileMenu__instaLink {
+    font-size: 18px;
+  }
 }
 
 .logo {
@@ -415,12 +430,17 @@ img {
 .hero__header {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 26px;
+  font-size: 6.5vw;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (min-width: 400px) {
+  .hero__header {
+    font-size: 26px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__header {
